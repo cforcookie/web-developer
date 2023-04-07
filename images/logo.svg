@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="2" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.39215687 0 0 0 0 0.39215687 0 0 0 0 0.39215687 0 0 0 0.49803922 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="2" />
+      <feGaussianBlur stdDeviation="3" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.23529412 0 0 0 0 0.3019608 0 0 0 0 0.22352941 0 0 0 1 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+  </defs>
+  <g id="logo" fill-opacity="1" transform="translate(9 7)">
+    <path d="M0 0L63 0L63 63L0 63L0 0Z" id="logo" fill="none" fill-rule="evenodd" stroke="none" />
+    <g filter="url(#filter_2)">
+      <g id="logo">
+        <path d="M16.06 0.367888C26.8173 -1.72095 37.233 5.29717 39.324 16.0433C41.415 26.7894 34.3895 37.1942 23.6322 39.283C12.8749 41.3719 2.45928 34.3537 0.368271 23.6076C-1.72274 12.8615 5.30269 2.45672 16.06 0.367888Z" id="Овал" fill="#D9D266" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+        <path d="M39.3678 7.95769C50.1251 5.86886 60.5407 12.887 62.6317 23.6331C64.7227 34.3792 57.6973 44.784 46.94 46.8728C36.1827 48.9617 25.767 41.9435 23.676 31.1974C21.585 20.4513 28.6105 10.0465 39.3678 7.95769Z" id="Овал-2" fill="#73D493" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+        <path d="M20.6033 23.717C31.3607 21.6281 41.7763 28.6463 43.8673 39.3924C45.9583 50.1385 38.9329 60.5433 28.1756 62.6321C17.4182 64.7209 7.00262 57.7028 4.91161 46.9567C2.8206 36.2106 9.84603 25.8058 20.6033 23.717Z" id="Овал-3" fill="#E6C16B" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+      </g>
+    </g>
+  </g>
+</svg>

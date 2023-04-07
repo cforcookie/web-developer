@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #221f34;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.panel {
+    background-color: #5e4c64;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #fddbd9;
+}
+
+.logoName {
+    width: calc(100% /2);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navigate {
+    width: calc(100% /3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+.source {
+    width: calc(100% /3);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.githubLogo {
+    width: 30px;
+}
+
+.content {
+    padding-top: 50px;
+}
+
+.content, .paragrah1, .status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px 20px;
+    
+
+}
+
+.Photo {
+    width: 300px;
+    height: 300px;
+}
+
+.border_status {
+    border-radius: 28px;
+    width: 35%;
+    background: #be8598;
+    background-blend-mode: normal;
+}
+
+.status_text{
+    color: #fddbd9;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.paragrah1, .paragrah2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fddbd9;
+}
+
+.paragrah2 {
+    padding-bottom: 10%;
+}
+
+.header_text {
+    text-decoration: underline;
+    padding-top: 40px;
+    font-size: 36px;
+}
+
+.text {
+    text-align: justify;
+    width: 35%;
+    text-indent: 40px;
+}
+
+.contacts {
+    background-color: #5e4c64;
+    height: 15vh;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacts_logos {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.contacts_data, .contact {
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 5px;
+    text-align: left;
+    color: #fddbd9;
+    display: flex; 
+    align-items: center;
+    
+}
+
+.my_contacts {
+    text-decoration: underline;
+}
+
