@@ -1,150 +1,312 @@
+:root {
+    --text-color:#000000;
+    --text-color-revers:#ffffff;
+    --section-color-white:#ffffff;
+    --section-color-grey:#e0e0e0;
+    --footer-color:#0f3f7a;
+}
+
 * {
-    box-sizing: border-box;
+    box-sizing: 0;
 }
 
 body {
     margin: 0;
-    background-color: #221f34;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Assistant', sans-serif;
+    background-color: var(--section-color-white);
 }
 
+.progress{
+    height:10px;
+    background: #000;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  .progress__highlight{
+    transition: width 0.15s linear;
+    background:#03c4ae;
+    height:100%;
+    width:0%;
+}
 
-.panel {
-    background-color: #5e4c64;
-    height: 8vh;
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.backgroundContainer {
+    width: 100%;
+    height: 20%;
+}
+
+.headerImg {
+    width: 100%;
+    height: 50vb;
+    object-fit: cover;
+    object-position: 0 100;
+}
+
+.photoPosition {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
-    color: #fddbd9;
+    justify-items: center;
+    position: absolute;
+    top: 30%;
 }
 
-.logoName {
-    width: calc(100% /2);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 20px;
-
+.photo {
+    border-radius: 50%;
+    background-color: var(--section-color-white);
+    border: 10px solid var(--section-color-white);
+    width: 200px;
 }
 
-.navigate {
-    width: calc(100% /3);
+.mainInfo {
+    background-color: var(--section-color-white);
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px 20px;
 }
 
-.source {
-    width: calc(100% /3);
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 5px;
+.fio {
+    font-size: 48px;
 }
 
-.logo {
-    width: 50px;
+.underFio {
+    font-size: 24px;
 }
 
-.githubLogo {
-    width: 30px;
-}
-
-.content {
-    padding-top: 50px;
-}
-
-.content, .paragrah1, .status {
+.socialMain {
+    padding: 20px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 20px 20px;
-    
-
+    gap: 20px;
 }
 
-.Photo {
-    width: 300px;
-    height: 300px;
+.socialMedia {
+    border-radius: 50%;
+    width: 40px;
 }
 
-.border_status {
-    border-radius: 28px;
-    width: 35%;
-    background: #be8598;
-    background-blend-mode: normal;
+.socialMediaItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
-.status_text{
-    color: #fddbd9;
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+.socialMediaItem:hover {
+    opacity: 1;
+}
+
+
+.pop {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--section-color-white);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+    transition: width 0.2s;
+}
+
+.pop:hover {
+    background-color: #79abe7;
+    width: 120px;
+}
+
+.pop:hover::after {
+    content: "Twitter";
+}
+
+.pop2 {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--section-color-white);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+    transition: width 0.2s;
+}
+
+.pop2:hover {
+    background-color: #79e7de;
+    width: 120px;
+}
+
+.pop2:hover::after {
+    content: "GitHub";
+}
+
+.pop3 {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--section-color-white);
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+    transition: width 0.2s;
+}
+
+.pop3:hover {
+    background-color: #ca79e7;
+    width: 120px;
+}
+
+.pop3:hover::after {
+    content: "Telegram";
+}
+
+.moveTo {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.status {
+    width: 50%;
+    height: max-content;
+    font-size: 24px;
+    justify-content: center;
     text-align: center;
-    padding: 1%;
-    padding-left: 10%;
-    padding-right: 10%;
-    
+    padding-bottom: 5%;
 }
 
-.paragrah1, .paragrah2 {
+.aboutContainer, .stackContainer, .profContainer {
+    background-color: var(--section-color-grey);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    color: #fddbd9;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
 
-.paragrah2 {
-    padding-bottom: 10%;
+.header {
+    font-size: 48px;
 }
 
-.header_text {
-    text-decoration: underline;
-    padding-top: 40px;
-    font-size: 36px;
-}
-
-.text {
+.textContainer {
+    width: 50%;
+    font-size: 24px;
     text-align: justify;
-    width: 35%;
-    text-indent: 40px;
 }
 
-.contacts {
-    background-color: #5e4c64;
-    height: 15vh;
-    width: 100%;
-    padding: 5%;
+.stackContainer {
+    background-color: var(--section-color-white);
+}
+
+ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+li {
+    list-style-type: "・";
+    text-indent: 10px;
+}
+
+.footerContainer {
+    background-color: var(--footer-color);
+    color: var(--section-color-white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mailAdress {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    font-size: 32px;
+    border-radius: 20px;
+    width: 420px;
+    height: 60px;
+    background-color: var(--footer-color);
+    transition: background-color 0.1s;
 }
 
-.contacts_logos {
-    width: 20px;
-    height: 20px;
-    
+.mailAdress:hover {
+    background-color: #3d82d7;
 }
 
-.contacts_data, .contact {
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 5px;
-    text-align: left;
-    color: #fddbd9;
-    display: flex; 
+.socialMediaBottom {
+    width: 30px;
+    fill: var(--section-color-white);
+}
+
+.source {
+    font-size: 24px;
+}
+
+
+.socialFooter {
+    background-color: var(--text-color);
+    width: 200px;
+    transition: width 0.2s;
+    height: 60px;
+    border-radius: 20px;
+    gap: 10px;
+    display: flex;
     align-items: center;
-    
+    justify-content: center;
+    text-decoration: none;
+    color: var(--section-color-white);
 }
 
-.my_contacts {
-    text-decoration: underline;
+.socialFooter:hover {
+    width: 250px;
 }
 
+.mdb {
+    color: #3cb27d;
+}
+
+.expr {
+    color: #e145ec;
+}
+
+.react {
+    color: #7d75ee;
+}
+
+.node {
+    color: #189d00;
+}
+
+.js {
+    color: #ffe53b
+}
