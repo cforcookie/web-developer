@@ -18,14 +18,16 @@
         <div class="menu" id="Menu" onmouseover="menuPop()" onmouseleave="menuPopLeave()">
             <img class="menuButton" src="../images/menu.svg" alt="logo">
             <div id="menuContent">
-                <a class="aboutLink" id="link0" href="#top" onclick="scrollToElement(top)">About</a>
-                <a class="aboutLink" id="link1" href="#center" onclick="scrollToElement(center)">Stack</a>
-                <a class="aboutLink" id="link3" href="#bottom" onclick="scrollToElement(bottom)">Professional skills</a>
+                <a class="aboutLink" href="#home" onclick="scrollToElement(bottom)"><img class="icoPop" src="../images/home.svg" alt="home"> Home</a>
+                <a class="aboutLink" href="#top" onclick="scrollToElement(top)"><img class="icoPop" src="../images/message.svg" alt="about"> About</a>
+                <a class="aboutLink" href="#center" onclick="scrollToElement(center)"><img class="icoPop" src="../images/stack.svg" alt="stack"> Stack</a>
+                <a class="aboutLink" href="#bottom" onclick="scrollToElement(bottom)"><img class="icoPop" src="../images/platform.svg" alt="skills"> Professional skills</a>
+                <a class="aboutLink" href="#contacts" onclick="scrollToElement(bottom)"><img class="icoPop" src="../images/contacts.svg" alt="contacts"> Contacts</a>
             </div>
         </div>
     </header>
     <div class="app" id="js-container">
-        <div class="backgroundContainer">
+        <div class="backgroundContainer" id="home">
             <img class="headerImg" src="../images/minimalism-wallpaper.png" alt="header">
         </div>
         <div class="photoPosition">
@@ -74,7 +76,7 @@
                 </ul>
             </div>
         </div>
-        <footer class="footerContainer">
+        <footer class="footerContainer" id="contacts">
             <span onclick="copyText()" class="mailAdress" id="textToCopy">eugene-develop@gmail.com</span>
             <a class="socialFooter" href="https://github.com/cforcookie/----------------" target = "_ blank">
                 <img class="socialMediaBottom" src="../images/source.svg" alt="source code">

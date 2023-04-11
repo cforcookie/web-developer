@@ -7,7 +7,7 @@ function copyText() {
 
 function menuPop() {
     document.getElementById("Menu").style.width = "300px";
-    document.getElementById("Menu").style.height = "300px";
+    document.getElementById("Menu").style.height = "400px";
     document.getElementById("menuContent").style.opacity = "1";
     document.getElementById("Menu").style.borderRadius = "0 0 50px 0";
     document.getElementById("Menu").style.boxShadow = "10px 10px 20px rgba(0, 0, 0, 0.1)";
