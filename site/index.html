@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,19 @@
     <title>Web developer</title>
 </head>
 <body>
+    <header>
+        <div class="menu" id="Menu" onmouseover="menuPop()" onmouseleave="menuPopLeave()">
+            <img class="menuButton" src="../images/menu.svg" alt="logo">
+            <div id="menuContent">
+                <a class="aboutLink" id="link0" href="#top" onclick="scrollToElement(top)">About</a>
+                <a class="aboutLink" id="link1" href="#center" onclick="scrollToElement(center)">Stack</a>
+                <a class="aboutLink" id="link3" href="#bottom" onclick="scrollToElement(bottom)">Professional skills</a>
+            </div>
+        </div>
+    </header>
     <div class="app" id="js-container">
         <div class="backgroundContainer">
-            <img class="headerImg" src="../images/headerBackgroud.jpg" alt="header">
+            <img class="headerImg" src="../images/minimalism-wallpaper.png" alt="header">
         </div>
         <div class="photoPosition">
             <img class="photo" src="../images/photo.png" alt="">
@@ -24,17 +35,17 @@
                 <span class="fio">Eugene Mario</span>
                 <span class="underFio">Full stack web-developer</span>
                 <div class="socialMain">
-                    <a class="moveTo" href="">
+                    <a class="moveTo" href="https://twitter.com/Myawcev" target = "_ blank">
                         <div class="pop">
                             <img class="socialMedia" src="../images/twitter.svg" alt="twitter">
                         </div>
                     </a>
-                    <a class="moveTo" href="">
+                    <a class="moveTo" href="https://github.com/cforcookie" target = "_ blank">
                         <div class="pop2">
                             <img class="socialMedia" src="../images/github.svg" alt="github">
                         </div>
                     </a>
-                    <a class="moveTo" href="">
+                    <a class="moveTo" href="https://t.me/Flotry" target = "_ blank">
                         <div class="pop3">
                             <img class="socialMedia" src="../images/telegram.svg" alt="telegram">
                         </div>
@@ -42,15 +53,15 @@
                 </div>
             </div>
         </div>
-        <div class="aboutContainer">
+        <div class="aboutContainer" id="top">
             <span class="header">ABOUT</span>
             <p class="textContainer">My name is Eugene and I am a full stack developer. I've been working on freelancing for a few years now and I like the freedom and flexibility of this format. I live in Russia, but my clients are from different countries and spheres. I know how to create websites and applications from scratch, using different technologies and programming languages. I am interested in learning new things and solving complex problems. I love my job and consider myself a happy person.</p>
         </div>
-        <div class="stackContainer">
+        <div class="stackContainer" id="center">
             <span class="header">STACK</span>
             <p class="textContainer">I build sites and applications using the <span class="mdb">M</span><span class="expr">E</span><span class="react">R</span><span class="node">N</span> technology stack, which includes <span class="mdb">MongoDB</span>, <span class="expr">Express</span>, <span class="react">React</span>, and <span class="node">Node.js</span>. This allows me to develop fast, modern and interactive web projects in <span class="js">JavaScript</span>.</p>
         </div>
-        <div class="profContainer">
+        <div class="profContainer" id="bottom">
             <span class="header">Professional skills</span>
             <div class="textContainer">
                 <ul>
@@ -65,8 +76,8 @@
         </div>
         <footer class="footerContainer">
             <span onclick="copyText()" class="mailAdress" id="textToCopy">eugene-develop@gmail.com</span>
-            <a class="socialFooter" href="">
-                <img class="socialMediaBottom" src="../images/source.svg" alt="vk">
+            <a class="socialFooter" href="https://github.com/cforcookie/----------------" target = "_ blank">
+                <img class="socialMediaBottom" src="../images/source.svg" alt="source code">
                 <span class="source">Source code</span>
             </a>
         </footer>

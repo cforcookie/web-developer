@@ -3,7 +3,7 @@
     --text-color-revers:#ffffff;
     --section-color-white:#ffffff;
     --section-color-grey:#e0e0e0;
-    --footer-color:#0f3f7a;
+    --footer-color:#727586;
 }
 
 * {
@@ -14,6 +14,59 @@ body {
     margin: 0;
     font-family: 'Assistant', sans-serif;
     background-color: var(--section-color-white);
+}
+
+header {
+    position: fixed;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 0 0 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#menuContent {
+    padding-top: 50px;
+    padding-left: 80px;
+    opacity: 0;
+    width: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.aboutLink {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.aboutLink:hover {
+    color: #feab8b;
+}
+
+.menuButton {
+    position: fixed;
+    width: 50px;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 }
 
 .progress{
@@ -55,7 +108,7 @@ body {
     justify-content: center;
     justify-items: center;
     position: absolute;
-    top: 30%;
+    top: 32%;
 }
 
 .photo {
@@ -256,11 +309,11 @@ li {
     width: 420px;
     height: 60px;
     background-color: var(--footer-color);
-    transition: background-color 0.1s;
+    transition: background-color 0.2s;
 }
 
 .mailAdress:hover {
-    background-color: #3d82d7;
+    background-color: #bea29f;
 }
 
 .socialMediaBottom {
@@ -274,7 +327,7 @@ li {
 
 
 .socialFooter {
-    background-color: var(--text-color);
+    background-color: #ff8e88;
     width: 200px;
     transition: width 0.2s;
     height: 60px;
